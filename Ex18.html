@@ -1,0 +1,22 @@
+<html> 
+<head> 
+<title>simple animation</title> 
+
+<script language="JavaScript"> 
+
+function moveTxt()//функция отвечающая за анимацию 
+{ 
+if (anil.style.pixelTop < 500)//проверка на достижение положения елемента anil 
+{ 
+anil.style.pixelTop +=10;//10 пикс вниз 
+setTimeout("moveTxt()", 10);//запуск функции раз в 10 мсек 
+} 
+} 
+</script> 
+</head> 
+<body onLoad="moveTxt()"> <!--при загрузке страницы выполняем ф-цию moveTxt-->
+<div id="anil" style="position:absolute; left:10; top:10"> 
+Текст, шагом марш! 
+</div> 
+</body> 
+</html>
